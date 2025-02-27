@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background: #1a1a1a url('assets/konoha-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.3);
+}
+
+.game-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game-header h1 {
+    color: #ff9900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+}
+
+.game-main {
+    display: flex;
+    gap: 20px;
+}
+
+#gameCanvas {
+    border: 2px solid #ff9900;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.game-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.next-piece {
+    text-align: center;
+}
+
+#nextCanvas {
+    border: 2px solid #ff9900;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+}
+
+.controls {
+    background: rgba(255, 153, 0, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.controls h3 {
+    color: #ff9900;
+    margin-bottom: 10px;
+}
+
+.controls p {
+    margin: 5px 0;
+}
+
+.ninja-btn {
+    background: linear-gradient(45deg, #ff9900, #ff6600);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.ninja-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 153, 0, 0.4);
+}
+
+.ninja-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(255, 153, 0, 0.4);
+}

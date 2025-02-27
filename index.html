@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>火影忍者俄罗斯方块</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>火影忍者俄罗斯方块</h1>
+            <div class="game-info">
+                <div class="score">分数: <span id="score">0</span></div>
+                <div class="level">等级: <span id="level">1</span></div>
+            </div>
+        </div>
+        <div class="game-main">
+            <canvas id="gameCanvas" width="300" height="600"></canvas>
+            <div class="game-sidebar">
+                <div class="next-piece">
+                    <h3>下一个</h3>
+                    <canvas id="nextCanvas" width="100" height="100"></canvas>
+                </div>
+                <div class="controls">
+                    <h3>操作说明</h3>
+                    <p>↑ - 旋转</p>
+                    <p>← - 左移</p>
+                    <p>→ - 右移</p>
+                    <p>↓ - 加速下落</p>
+                    <p>空格 - 直接下落</p>
+                </div>
+                <button id="startBtn" class="ninja-btn">开始游戏</button>
+                <button id="pauseBtn" class="ninja-btn">暂停</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
